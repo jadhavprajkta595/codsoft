@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background:lightskyblue;
+  color: #333;
+  text-align: center;
+  
+ 
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+header {
+  background-color:navy;
+  color: white;
+  text-align: center;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content:left;
+}
+  #pills-tab {
+    justify-content: flex-end;
+    width: 90%; 
+  
+  
+}
+  #home {
+    background-color: lightblue !important;
+    min-height: 50vh;
+}
+
+.skill-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h5 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.progress {
+  height: 20px;
+  border-radius: 10px;
+}
+.img{
+padding-left: 50px;
+}
+#certifications {
+  background: #f8f9ff;
+}
+
+.cert-card {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(90deg, #4e73df, #1cc88a);
+}
+
+.cert-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.cert-card .icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: white;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.cert-card h5 {
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.cert-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.cert-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.cert-btn:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* Highlight internship offer */
+.cert-card.highlight::before {
+  background: linear-gradient(90deg, #f6c23e, #e74a3b);
+}
+#contact {
+  background: #f8f9ff;
+  padding-left: 100px;
+  padding-right: 100px;
+  
+}
+
+.contact-card {
+  background: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.contact-card h5 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.contact-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.contact-card a:hover {
+  color: #1cc88a;
+}
+
+.contact-card .btn {
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.contact-card .btn-linkedin {
+  background: #0077b5;
+  color: white;
+  border: none;
+}
+
+.contact-card .btn-linkedin:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+
+
+.contact-card input, 
+.contact-card textarea {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+}
+
+.contact-card input:focus, 
+.contact-card textarea:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+  outline: none;
+}
+.footer-light {
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-light p {
+  margin: 0;
+}
+
+.footer-link {
+  color: #333;
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #1cc88a;
+}
+
+.footer-social a {
+  color: #333;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-social a:hover {
+  color: #1cc88a;
+  transform: translateY(-3px);
+}

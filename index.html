@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="styleC.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header> 
+        <h1>Portfolio</h1>
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-About-tab" data-bs-toggle="pill" data-bs-target="#pills-About" type="button" role="tab" aria-controls="pills-About" aria-selected="false">About</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-certeficate and internship" data-bs-toggle="pill" data-bs-target="#pills-certeficate and internship" type="button" role="tab" aria-controls="pills-certeficate and internship" aria-selected="false">Certeficate and internship</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-Contact-tab" data-bs-toggle="pill" data-bs-target="#pills-Contact" type="button" role="tab" aria-controls="pills-Contact" aria-selected="false">Contact</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"></div>
+  <div class="tab-pane fade" id="pills-About" role="tabpanel" aria-labelledby="pills-About-tab" tabindex="0"></div>
+  <div class="tab-pane fade" id="pills-certeficate and internship" role="tabpanel" aria-labelledby="pills-certeficate and internship-tab" tabindex="0"></div>
+  <div class="tab-pane fade" id="pills-Contact" role="tabpanel" aria-labelledby="pills-Contact-tab" tabindex="0"></div>
+</div>
+</header>
+<section id="home" class="container-fluid text-center py-5" >
+    <h1 class="fw-bold">Hi, I am Prajkta  Ashruba Jadhav 👋</h1>
+    
+    <p class="lead mt-3">
+       I am Information technology Engineering Student, i learn about the Web Development,python programming to built responsive websites 
+    </p>
+    
+    <p class="mt-2">
+        I build simple and responsive websites for internship by using HTML, CSS, and Bootstrap.
+    </p>
+
+    <div class="mt-4">
+       
+
+<button class="btn btn-outline-primary" onclick="showContact()">
+    Contact Me
+</button>
+
+<div id="contact-info" style="display:none; margin-top:10px;">
+    <p>Email: <a href="mailto:jadhavprajkta419@gmail.com">jadhavprajkta419@gmail.com</a></p>
+    <p>Phone: <a href="tel:+918468963283">+91 8468963283</a></p>
+</div>
+ 
+<script>
+function showContact() {
+    var info = document.getElementById('contact-info');
+    if(info.style.display === 'none'){
+        info.style.display = 'block';
+    } else {
+        info.style.display = 'none';
+    }
+}
+</script>
+
+</div>
+
+</section>
+<section id="about" class="container py-5">
+  <h2 class="text-center fw-bold mb-5" style="color:#1c3f95;">About Me</h2>
+
+  <div class="row align-items-center g-4">
+
+    <!-- Profile Image -->
+    <div class="col-md-4 d-flex justify-content-start">
+      <div class="profile-card shadow-sm p-3 bg-white rounded">
+        <img src="c:\Users\user\Documents\Project.jpeg" alt="Prajkta Ashruba Jadhav" class="img-fluid circle">
+      </div>
+    </div>
+
+    <!-- About Info -->
+    <div class="col-md-8">
+      <div class="info-card shadow-sm p-4 bg-white rounded">
+        <p style="font-size:16px; line-height:1.6;">
+          Hi, I am <strong>Prajkta Ashruba Jadhav</strong>, an Information Technology engineering student passionate about <span style="color:#1cc88a;">web development</span> and programming. I enjoy building responsive, user-friendly websites and exploring emerging technologies like <span style="color:#4e73df;">Python, DSA</span>, and AI. My focus is on learning and applying skills that solve real-world problems.
+        </p>
+
+        <h5 class="mt-3" style="color:#1c3f95;">Skills</h5>
+        <ul class="list-unstyled">
+          <li>✅ Web Development</li>
+          <li>✅ Responsive Design</li>
+          <li>✅ HTML, CSS, Bootstrap</li>
+          <li>✅ Learning Python</li>
+        </ul>
+
+        <h5 class="mt-3" style="color:#1c3f95;">Education</h5>
+        <ul class="list-unstyled">
+          <li>🎓 B.E. IT – Sinhgad institute of technology,Lonavala (2024–2027)</li>
+          <li>🎓 Diloma – Sou.venutai chavan polytechnical,pune </li>
+          <li>🎓 SSC – Swami vivekanand vidhya mandir School</li>
+        </ul>
+
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/prajkta-jadhav" target="_blank" 
+           class="btn" style="background: linear-gradient(135deg, #4e73df, #1cc88a); color:white; border:none; border-radius:30px; padding:8px 25px; transition:0.3s;">
+          Connect on LinkedIn
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="certifications" class="container py-5">
+  <h2 class="text-center fw-bold mb-5">
+    Certifications & Internship
+  </h2>
+
+  <div class="row g-4">
+
+    <!-- Web Development Certificate -->
+    <div class="col-md-4">
+      <div class="cert-card">
+        <div class="icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h5>Web Development Certificate</h5>
+        <p>HTML, CSS, Bootstrap, JavaScript</p>
+        <a href="c:\Users\user\Documents\webcertificate.jpeg" class="cert-btn">View Certificate</a>
+      </div>
+    </div>
+
+    <!-- IBM Certificate -->
+    <div class="col-md-4">
+      <div class="cert-card">
+        <div class="icon">
+          <i class="fa-brands fa-ibm"></i>
+        </div>
+        <h5>IBM Certification</h5>
+        <p>IBM Skills / Technology Program</p>
+        <a href="c:\Users\user\Documents\ibm.jpeg" class="cert-btn">View Certificate</a>
+      </div>
+    </div>
+
+    <!-- Internship Completion -->
+    <div class="col-md-4">
+      <div class="cert-card">
+        <div class="icon">
+          <i class="fa-solid fa-certificate"></i>
+        </div>
+        <h5>Internship Completion Letter</h5>
+        <p>Web Development Intern</p>
+        <a href="c:\Users\user\Documents\internship.jpeg" class="cert-btn">View  completion Letter</a>
+      </div>
+    </div>
+
+    <!-- Internship Offer -->
+    <div class="col-md-4 offset-md-4">
+      <div class="cert-card highlight">
+        <div class="icon">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <h5>Internship Offer Letter</h5>
+        <p>Web Development Intern</p>
+        <a href="c:\Users\user\Documents\codsoft.jpeg" class="cert-btn">View Offer Letter</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<br>
+<section id="contact" class="container py-5">
+  <h2 class="text-center fw-bold mb-5" style="color:#1c3f95;">Contact Me</h2>
+
+  <div class="row justify-content-center g-4">
+
+    <!-- Contact Info -->
+    <div class="col-md-5">
+      <div class="contact-card shadow-sm p-4 rounded bg-white text-center">
+        <h5 style="color:#1c3f95;">Get in Touch</h5>
+        <p style="font-size:16px; line-height:1.6;">
+          I’m available for internships, freelance projects, or collaborative opportunities. 
+          Feel free to reach out via email, phone, or connect with me on LinkedIn..
+        </p>
+
+        <p><i class="fa-solid fa-envelope" style="color:#4e73df;"></i> Email: 
+          <a href="mailto:prajkta.jadhav@email.com">jadhavprajkta419@gmail.com</a>
+        </p>
+        <p><i class="fa-solid fa-phone" style="color:#1cc88a;"></i> Phone: +91 8468963283</p>
+        <p><i class="fa-solid fa-location-dot" style="color:#f6c23e;"></i> Location: Pune, India</p>
+
+        <div class="mt-3">
+          <a href="https://www.linkedin.com/in/prajkta-jadhav" target="_blank" class="btn btn-linkedin mx-1">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+           </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-md-5">
+      <div class="contact-card shadow-sm p-4 rounded bg-white">
+        <h5 style="color:#1c3f95;">Send a Message</h5>
+        <form action="mailto:prajkta.jadhav@email.com" method="post" enctype="text/plain">
+          <div class="mb-3">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+<footer class="footer-light py-4">
+  <div class="container text-center">
+
+    <!-- Name / Branding -->
+    <p class="mb-2"><strong>Prajkta Ashruba Jadhav</strong></p>
+    <p class="mb-3" style="font-size:14px;">© 2026 All Rights Reserved</p>
+
+    <!-- Quick Links -->
+    <div class="footer-links mb-3">
+      <a href="#about" class="footer-link">About Me</a>
+      <span> | </span>
+      <a href="#certifications" class="footer-link">Certificates</a>
+      <span> | </span>
+      <a href="#contact" class="footer-link">Contact</a>
+    </div>
+
+    <!-- Social / Professional Links -->
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/prajkta-jadhav" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+     <a href="mailto:prajkta.jadhav@email.com" class="social-icon">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+
+
+    
